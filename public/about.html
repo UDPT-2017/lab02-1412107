@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>About</title>
+	<script src="components/jquery/dist/jquery.min.js"></script>
+  <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="lab01.css">
+  
+</head>
+<body>
+
+<div class="image-logo">
+  <img src="Images/logoforWebSite.png">
+</div>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MyFlick</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="Home.html">Home</a></li>
+        <li role="presentation"><a href="Albums.html">Albums</a></li>
+        <li role="presentation" class="active"><a href="About.html">About</a></li>
+        <li role="presentation"><a href="Blog.html">Blog</a></li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="col-md-2 navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbarLeft">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbarLeft">
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="https://www.flickr.com/" target="_blank">Flick</a></li>
+        <li role="presentation"><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+        <li role="presentation"><a href="https://twitter.com/?lang=en" target="_blank">Twitter</a></li>
+        <li role="presentation"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="content-about">
+  <div class="row">
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="thumbnail">
+        <a href="#"><img src="Albums_Images/Album1/a1.0.jpg" alt="Album1"></a>
+        <div class="caption">
+          <p>Student ID: 1412107</p>
+          <p>Fullname  : Phan Tiến Dũng</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="thumbnail">
+        <a href="#"><img src="Albums_Images/Album2/a2.0.jpg" alt="Album2"></a>
+        <div class="caption">
+          <p>Student ID: 1412112</p>
+          <p>Fullname  : Trà Ngô Ngọc Dương</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content-about">
+<div id="map"></div>
+</div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(10.762703, 106.682042), zoom: 18
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMCSOlMpbo6RgnR0d2VfTS03o4leQKQzA&callback=myMap"></script>
+
+
+<div class="footer">Copyright: phandung1349@gmail.com</div>
+
+</body>
+</html>

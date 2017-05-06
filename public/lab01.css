@@ -1,0 +1,132 @@
+.album-thumbnail{
+    width: 64%;
+    margin: auto;
+}
+
+.image-logo{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+
+}
+body {
+	margin-left: 5%;
+}
+
+.content-messages{
+    width: 64%;
+    margin: auto;
+}
+
+.content-users{
+    width: 64%;
+    margin: auto;
+}
+
+.content-about{
+    width: 80%;
+    margin: left;
+}
+
+.content-comment{
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.content{
+    width: 80%;
+    margin: left;
+}
+
+.font-blog {
+    font-size: 120%;
+}
+
+.blog-passage {
+    text-align: justify;
+    text-indent: 45px;
+    line-height: 1.9;
+    word-spacing: 2px;
+    font-size: 120%;
+}
+
+.footer {
+  position: relative;
+  clear: both;
+  margin-top: 150px;
+  right: 0;
+  margin-bottom: 5px;
+  left: 0;
+  padding: 1rem;
+  background-color: lightgrey;
+  text-align: left;
+  height: 100px;
+
+}
+
+.blog-panavigation {
+	position: fixed;
+	right: 0;
+	padding: 1rem;
+	background-color: #efefef;
+	top: 180px;
+}
+
+.vr {
+	margin-top: 222px;
+	margin-left: 100px;
+    width:10px;
+    background-color:#000;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:150px;
+}
+
+#map {
+	max-width:450px;
+	height:400px;
+	background:yellow;
+}
+
+.img-blog {
+	opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}

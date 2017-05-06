@@ -1,0 +1,68 @@
+{{>header}}
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MyChat</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav nav-pills">
+    	  <li role="presentation"><a href="/">Home</a></li>
+    	  <li role="presentation"><a href="/messages">Messages</a></li>
+    	  <li role="presentation"><a href="/about">About</a></li>
+    	  <li role="presentation"><a href="/users">Users</a></li>
+	     </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- onSubmit="alert('Sign up successfully!');" -->
+<div class="content">
+  <h3>Create your account {{messagecheckSignup}} </h3>  </br>
+    <form class="form-horizontal" action="" method="post">
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email *</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" maxlength="50" id="email" placeholder="Enter email" required name="email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password *</label>
+        <div class="col-sm-6">
+          <input type="password" class="form-control" maxlength="50" id="pwd" placeholder="Enter password" required name="password">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Name *</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" maxlength="50" id="name" placeholder="Enter name" required name="name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Telephone *</label>
+        <div class="col-sm-6">
+          <input type="number" class="form-control" min="1000000000" max="99999999999" id="telephone" placeholder="Enter telephone" required name="telephone">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-6">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+</div>
+
+{{>footer}}

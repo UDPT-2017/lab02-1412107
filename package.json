@@ -1,0 +1,23 @@
+{
+  "name": "myflicke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "install": "node_modules/.bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vika41130",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bower": "^1.8.0",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "pg": "^6.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
