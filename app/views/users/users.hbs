@@ -1,7 +1,11 @@
-<ol class="breadcrumb">
-  <li><a href="/users">users</a></li>
-</ol>
+{{#each emails}}
 
 <div class="content-users">
-
+  <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+  <div>
+    {{this.email}}<span style="display:inline-block; width: 60px;"></span>
+    <button class="btn btn-primary">Add</button>
+  </div>
 </div>
+
+{{/each}}

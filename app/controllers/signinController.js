@@ -53,7 +53,8 @@ var signinController = {
                       messagecheckSignin: 'Sign in successfully',
                       messageWelcome: Welcome
                    });
-                   return res.redirect("../messages");
+
+                  //  return res.redirect('/messages');
               }
               else {
                 res.render('shared/signin',
