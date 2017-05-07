@@ -3,7 +3,7 @@
 **Name of your app** là một bài tập 2 tại môn UDPT. Ứng dụng cho phép người dùng gửi tin nhắn (email) cho người dùng khác.
 
 Thành viên:
-* [ ] **1412107** phandung1349 (tên tài khoản github)
+*  **1412107** phandung1349 (tên tài khoản github)
 * [ ] **MSSV2**  (tên tài khoản github)
 
 URL: **URL hosting của bài tập**
