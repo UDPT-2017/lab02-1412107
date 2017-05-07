@@ -4,7 +4,7 @@
 
 Thành viên:
 * [ ] **1412107** phandung1349 (tên tài khoản github)
-* [ ] **MSSV2** 1412112 (tên tài khoản github)
+* [ ] **MSSV2**  (tên tài khoản github)
 
 URL: **URL hosting của bài tập**
 
