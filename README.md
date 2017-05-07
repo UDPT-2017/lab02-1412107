@@ -3,7 +3,7 @@
 **Name of your app** là một bài tập 2 tại môn UDPT. Ứng dụng cho phép người dùng gửi tin nhắn (email) cho người dùng khác.
 
 Thành viên:
-#  **1412107** phandung1349 (tên tài khoản github)
+*  **1412107** phandung1349 (tên tài khoản github)
 * [ ] **MSSV2**  (tên tài khoản github)
 
 URL: **URL hosting của bài tập**
@@ -14,7 +14,7 @@ Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm v
 
 Yêu cầu **GIT**
 * [ ] Có sử dụng GIT.
-* [*] Sử dụng GIT theo Centralized Workflow.
+*  Sử dụng GIT theo Centralized Workflow.
 * [ ] Sử dụng GIT theo Feature Branch Workflow.
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
