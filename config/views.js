@@ -1,6 +1,7 @@
 var exphbs  = require('express-handlebars');
 var path = require('path');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 // var helpers = require('../app/helpers')
 
 

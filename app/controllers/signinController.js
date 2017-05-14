@@ -2,7 +2,7 @@ var signin = require('../models/signin')
 var bodyParser = require('body-parser')
 
 var signinController = {
-  showFormSignin: function(req, res){
+  showSignin: function(req, res){
     res.render('shared/signin',
        {
           title: 'Sign in',
@@ -44,7 +44,11 @@ var signinController = {
             else {
               console.log(result.rows.length)
               if(result.rows.length > 0){
-                var Welcome = 'Welcome ' + email + ' to myflicke';
+                let Welcome = 'Welcome ' + email + ' to mychat';
+                sess = req.session;
+                //In this we are assigning email to sess.email variable.
+                //email comes from HTML page.
+                sess.email=req.body.email;
                 res.render('shared/signin',
                    {
                       title: 'Sign in',
@@ -53,8 +57,8 @@ var signinController = {
                       messagecheckSignin: 'Sign in successfully',
                       messageWelcome: Welcome
                    });
-
-                  //  return res.redirect('/messages');
+                res.end('done');
+                return res.redirect('/messages');
               }
               else {
                 res.render('shared/signin',

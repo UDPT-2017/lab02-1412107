@@ -1,11 +1,27 @@
-{{#each emails}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    {{#each emails}}
 
-<div class="content-users">
-  <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
-  <div>
-    {{this.email}}<span style="display:inline-block; width: 60px;"></span>
-    <button class="btn btn-primary">Add</button>
-  </div>
-</div>
+    <div class="content-users">
+      <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+      <div>
+        {{this.email}}<span style="display:inline-block; width: 60px;"></span>
+        <button class="btn btn-primary">Add</button>
+      </div>
+    </div>
 
-{{/each}}
+    {{/each}}
+    <script>
+    $(document).ready(function(){
+      alert('DOM ready')
+    });
+    </script>
+
+  </body>
+</html>

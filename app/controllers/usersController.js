@@ -18,7 +18,7 @@ var usersController = {
          throw(err);
        }
        else {
-         console.log(result)
+         console.log(result.rows)
          res.render('users/users',
             {
                title: 'users',

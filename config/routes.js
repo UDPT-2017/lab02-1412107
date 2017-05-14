@@ -4,7 +4,7 @@ var Router = require('express').Router
 var controllers = require('../app/controllers')
 
 module.exports = function(app){
-	
+
 	var indexRouter = Router().get('/', controllers.index.index)
 	app.use('/', indexRouter)
 
@@ -18,6 +18,6 @@ module.exports = function(app){
 	app.get('/signup',  controllers.signup.showFormSignup)
 	app.post('/signup',  controllers.signup.checkSignup)
 
-	app.get('/signin',  controllers.signin.showFormSignin)
+	app.get('/signin',  controllers.signin.showSignin)
 	app.post('/signin',  controllers.signin.checkSignin)
 }
