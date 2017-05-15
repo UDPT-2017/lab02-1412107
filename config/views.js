@@ -16,7 +16,6 @@ module.exports = function(app){
 	   partialsDir: path.resolve('app/views/partials/'),
 	  //  helpers: helpers
 	}));
-
 	app.set('view engine', 'hbs');
 	app.set('views', path.resolve('app/views'));
 }

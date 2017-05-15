@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+// var sess;
+// module.exports = sess;
+
 require('./config')(app);
 
 //start server

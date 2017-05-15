@@ -3,8 +3,11 @@ var bodyParser = require('body-parser')
 
 var usersController = {
    index: function (req, res) {
-     //call models
-    //  var result;
+    //  sess = req.session;
+     console.log(req.session.email)
+     if(!req.session.email) {
+       res.redirect('/');
+     }
      users.getEmail(function(err, result){
        if(err){
          res.render('users/users',

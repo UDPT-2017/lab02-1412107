@@ -20,4 +20,5 @@ module.exports = function(app){
 
 	app.get('/signin',  controllers.signin.showSignin)
 	app.post('/signin',  controllers.signin.checkSignin)
+	app.get('/signout',  controllers.signout.signout)
 }
