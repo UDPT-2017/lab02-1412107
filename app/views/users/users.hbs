@@ -2,24 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
+  <h4 style="color: red">{{Welcome}}</h4>
   <body>
     {{#each emails}}
 
-    <div class="content-users">
-      <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
-      <div>
-        {{this.email}}<span style="display:inline-block; width: 60px;"></span>
-        <button class="btn btn-primary">Add</button>
+      <div class="content-users">
+        <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+        <div id="email">
+          {{this.email}}<span style="display:inline-block; width: 60px;"></span>
+        </div>
+        <div id="btn">
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
       </div>
-    </div>
 
     {{/each}}
     <script>
     $(document).ready(function(){
-      
+      // $("button").text("Remove");
     });
     </script>
 

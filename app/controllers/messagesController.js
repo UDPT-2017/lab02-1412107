@@ -1,20 +1,21 @@
 var messagesController = {
    messages: function (req, res) {
-      sess = req.session;
-      if(sess.email) {
-        let Welcome = 'Welcome ' + email + ' to mychat';
+     let Welcome;
+      if(req.session.email) {
+        Welcome = 'Welcome ' + req.session.email + ' to mychat';
+        res.render('messages/messages',
+           {
+              title: 'Messages',
+              message: Welcome,
+              layout: 'messages-layout',
+              page: 'messages',
+              Welcome: Welcome
+           });
       }
       else {
-        Welcome = "";
+        res.redirect('/');
       }
-      res.render('messages/messages',
-         {
-            title: 'Messages',
-            message: Welcome,
-            layout: 'messages-layout',
-            page: 'messages'
-         });
-      },
+    },
 };
 
 module.exports = messagesController;

@@ -1,5 +1,6 @@
 var indexController = {
    index: function (req, res) {
+     
      console.log(req.session.email);
      res.render('index/index',
         {
