@@ -1,12 +1,15 @@
 var indexController = {
    index: function (req, res) {
-     
+     let Welcome = '';
+     if(req.session.email){
+       Welcome = 'Welcome ' + req.session.email + ' to mychat';
+     }
      console.log(req.session.email);
      res.render('index/index',
         {
            title: 'MyChat',
-           message: 'Welcome to MyChat!',
-           page: 'index'
+           page: 'index',
+           Welcome: Welcome
         });
      }
 };

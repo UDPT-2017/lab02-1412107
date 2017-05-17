@@ -1,12 +1,12 @@
 var pool = require('./db')
 
 module.exports = {
-  getEmail: function(callback){
+  getFriends: function(email, callback){
     pool.connect(function(err, client, done) {
   	  if(err) {
   	    return console.error('error fetching client from pool', err);
   	  }
-  	  client.query("SELECT email from users", function(err, result) {
+  	  client.query("select friend from friends where email = $1", [email], function(err, result) {
   	    done(err);
   	    if(err) {
   	    	// res.end();

@@ -6,13 +6,12 @@ var usersController = {
      console.log(req.session.email)
      Welcome = 'Welcome ' + req.session.email + ' to mychat';
      if(req.session.email) {
-       users.getEmail(function(err, result){
+       users.getFriends(req.session.email, function(err, result){
          if(err){
            res.render('users/users',
               {
                  title: 'users',
                  message: 'This is users!',
-                 layout: 'users-layout',
                  page: 'users',
               });
            res.end();
@@ -24,9 +23,8 @@ var usersController = {
               {
                  title: 'users',
                  message: 'This is users!',
-                 layout: 'users-layout',
                  page: 'users',
-                 emails: result.rows,
+                 friends: result.rows,
                  Welcome: Welcome
               });
          }

@@ -1,4 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lab01.css">
+  </head>
 
-<div class="content-messages">
-<h4 style="color: red">{{Welcome}}</h4>
-</div>
+  <body>
+
+    <div class="image-logo">
+      <img src="Images/icon-mychat.png">
+    </div>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <form class="navbar-form navbar-left" action="" method="post" enctype="application/x-www-form-urlencoded">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../signout"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <div class="content-messages">
+      <h4 style="color: red">{{Welcome}}</h4>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MyChat</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="/messages">Messages</a></li>
+            <li role="presentation"><a href="/about">About</a></li>
+            <li role="presentation"><a href="/users">Users</a></li>
+           </ul>
+        </div>
+      </div>
+    </nav>
+    {{>footer}}
+  <body>
+</html>

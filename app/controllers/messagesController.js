@@ -7,7 +7,6 @@ var messagesController = {
            {
               title: 'Messages',
               message: Welcome,
-              layout: 'messages-layout',
               page: 'messages',
               Welcome: Welcome
            });
