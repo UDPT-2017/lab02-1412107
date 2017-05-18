@@ -6,12 +6,12 @@ var usersController = {
      console.log(req.session.email)
      Welcome = 'Welcome ' + req.session.email + ' to mychat';
      if(req.session.email) {
-       users.getFriends(req.session.email, function(err, result){
+       users.getNoneFriends(req.session.email, function(err, result){
          if(err){
            res.render('users/users',
               {
                  title: 'users',
-                 message: 'This is users!',
+                 Welcome: 'Error query',
                  page: 'users',
               });
            res.end();
@@ -19,14 +19,29 @@ var usersController = {
          }
          else {
            console.log(result.rows)
-           res.render('users/users',
-              {
-                 title: 'users',
-                 message: 'This is users!',
-                 page: 'users',
-                 friends: result.rows,
-                 Welcome: Welcome
-              });
+           users.getFriends(req.session.email, function(err, result1){
+             if(err){
+               res.render('users/users',
+                  {
+                     title: 'users',
+                     Welcome: 'Error query',
+                     page: 'users',
+                  });
+               res.end();
+               throw(err);
+             }
+             else {
+               console.log(result1.rows)
+               res.render('users/users',
+                  {
+                     title: 'users',
+                     page: 'users',
+                     nonefriends: result.rows,
+                     friends: result1.rows,
+                     Welcome: Welcome
+                  });
+             }
+           });
          }
        })
      }

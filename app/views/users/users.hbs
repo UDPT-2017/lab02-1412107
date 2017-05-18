@@ -50,7 +50,7 @@
       </div>
     </nav>
 
-    {{#each friends}}
+    {{#each nonefriends}}
 
       <div class="content-users">
         <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
@@ -63,10 +63,31 @@
       </div>
 
     {{/each}}
+
+    {{#each friends}}
+
+      <div class="content-users">
+        <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+        <div id="email">
+          {{this.friend}}<span style="display:inline-block; width: 60px;"></span>
+        </div>
+        <div>
+          <button id="btn" type="button" class="btn btn-primary">Remove</button>
+        </div>
+      </div>
+
+    {{/each}}
+
+
     <script>
-    $(document).ready(function(){
-      // $("#email").text("Remove");
-    });
+    $("#btn").click(function(e){
+      if($("#btn").text() === 'Add'){
+        $("#btn").text('Remove');
+      }
+      if($("#btn").text() === 'Remove'){
+        $("#btn").text('Add');
+      }
+    })
     </script>
 
     {{>footer}}
