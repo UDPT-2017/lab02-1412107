@@ -51,7 +51,6 @@
     </nav>
 
     {{#each nonefriends}}
-
       <div class="content-users">
         <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
         <div id="email">
@@ -61,34 +60,34 @@
           <button type="button" class="btn btn-primary">Add</button>
         </div>
       </div>
-
     {{/each}}
 
     {{#each friends}}
-
       <div class="content-users">
         <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
         <div id="email">
           {{this.friend}}<span style="display:inline-block; width: 60px;"></span>
         </div>
         <div>
-          <button id="btn" type="button" class="btn btn-primary">Remove</button>
+          <button id="btn" onclick="loadDoc()" type="button" class="btn btn-primary"><span id="spbtn">Remove</span></button>
         </div>
       </div>
-
     {{/each}}
 
-
     <script>
-    $("#btn").click(function(e){
-      if($("#btn").text() === 'Add'){
-        $("#btn").text('Remove');
+      function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+           document.getElementById("btn").innerHTML = "Remove";
+          }
+        };
+        xhttp.open("GET", true);
+        xhttp.send();
       }
-      if($("#btn").text() === 'Remove'){
-        $("#btn").text('Add');
-      }
-    })
     </script>
+    <!-- problem: -->
+    <!-- bat su kien, thay doi trong csdl -->
 
     {{>footer}}
   </body>

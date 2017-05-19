@@ -14,8 +14,42 @@ body {
   margin-right: 3%;
 }
 
-.content-messages{
-    margin: left;
+.class-button{
+  margin: right;
+}
+
+div.class-button{
+  display: inline-block;
+}
+
+div.class-each-button{
+  /*display: inline-block;*/
+  margin: left;
+  margin-top: 5%;
+}
+
+div.Received-or-Sent-Message{
+  display: inline-block;
+}
+
+.Received-or-Sent-Message{
+  border: 2px solid black;
+  width: 40%;
+  margin-right: 10%;
+  margin-bottom: 15px;
+  margin-top: 0%;
+}
+
+.content-each-messages{
+  margin: 6%;
+  border: 2px solid black;
+  padding: 5%;
+  padding-top: 2%;
+  /*width: 100%;*/
+}
+
+.content-message{
+    overflow: auto;
 }
 
 .content-users{
@@ -36,25 +70,12 @@ div.content-users{
     margin: left;
 }
 
-.content-comment{
-  margin-bottom: 10px;
-  height: 40px;
-}
-
 .content{
     width: 80%;
     margin: left;
 }
 
 .font-blog {
-    font-size: 120%;
-}
-
-.blog-passage {
-    text-align: justify;
-    text-indent: 45px;
-    line-height: 1.9;
-    word-spacing: 2px;
     font-size: 120%;
 }
 
@@ -69,7 +90,6 @@ div.content-users{
   background-color: lightgrey;
   text-align: left;
   height: 100px;
-
 }
 
 .blog-panavigation {
