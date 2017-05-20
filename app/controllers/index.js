@@ -6,4 +6,5 @@ module.exports = {
 	signup: require('./signupController'),
 	signin: require('./signinController'),
 	signout: require('./signoutController'),
+	addRemove: require('./addRemoveController'),
 }
