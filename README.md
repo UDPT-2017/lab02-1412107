@@ -24,7 +24,7 @@ Yêu cầu **bắt buộc**
 * [x] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**1412107**)
 * [x] Cho phép người dùng đăng ký tài khoản bằng các thông tin: email, password, name, phone.(**1412107**)
 * [x] Đăng nhập bằng email và password.(**1412107**)
-* [ ] Sau khi đăng nhập, người dùng sẽ được chuyển đến trang liệt kê danh sách các tin nhắn đã nhận, sắp xếp theo thứ tự thời gian, một nút để tạo tin nhắn mới, nút để xem danh sách bạn bè và nút để xem các tin nhắn đã gửi.(**MSSV**)
+* [x] Sau khi đăng nhập, người dùng sẽ được chuyển đến trang liệt kê danh sách các tin nhắn đã nhận, sắp xếp theo thứ tự thời gian, một nút để tạo tin nhắn mới, nút để xem danh sách bạn bè và nút để xem các tin nhắn đã gửi.(**1412107**)
 * [ ] Tin nhắn chưa đọc phải được làm nổi bật hơn các tin nhắn khác, có ghi nhận thời gian đã cách đây bao lâu.(**MSSV**)
 * [x] Trang users cho phép xem danh sách người dùng có trong hệ thống và phải có nút "add" với những người dùng chưa là bạn để thêm vào danh sách bạn bè.(**1412107**)
 * [x] Trang about thể hiện thông tin nhóm thực hiện đề tài.(**1412107**)
@@ -34,7 +34,7 @@ Yêu cầu **bắt buộc**
 * [ ] Cho phép người dùng layout tin nhắn bằng markdown. (**MSSV**)
 
 Yêu cầu **không bắt buộc**:
-* [ ] Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công.(**MSSV**)
+* [x] Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công.(**1412107**)
 * [ ] Tự động refresh lại danh sách tin nhắn đã nhận sau 1 khoảng thời gian nhất định và có hiển thị đã refresh danh sách tin nhắn cách đây bao lâu.(**MSSV**)
 * [ ] Cuối danh sách tin nhắn sẽ có "load more" để nạp thêm 10 tin nhắn tiếp theo.(**MSSV**)
 * [ ] Khi người dùng kéo đến cuối danh sách sẽ tự động nạp thêm 10 tin nhắn tiếp theo.(**MSSV**)
@@ -45,7 +45,7 @@ Yêu cầu **không bắt buộc**:
 * [ ] Quản lý các thay đổi trong cơ sở dữ liệu (sử dụng [db-migrate](https://www.npmjs.com/package/db-migrate))(**MSSV**)
 
 Liệt kê các **yêu cầu nâng cao** đã thực hiện:
-* [ ] Chức năng 1
+* [x] Chức năng 1: Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công.(1412107)
 * [ ] Chức năng 2
 
 ## Demo
