@@ -54,9 +54,7 @@
       <div class="content-users">
         <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
         <div class="email">{{this.email}}</div>
-        <div>
-          <button type="button" class="btn btn-primary btnusers">Add</button>
-        </div>
+        <button type="button" class="btn btn-primary btnusers">Add</button>
       </div>
     {{/each}}
 
@@ -64,9 +62,7 @@
       <div class="content-users">
         <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
         <div class="email">{{this.friend}}</div>
-        <div>
-          <button type="button" class="btn btn-primary btnusers">Remove</button>
-        </div>
+        <button type="button" class="btn btn-primary btnusers">Remove</button>
       </div>
     {{/each}}
 
@@ -75,13 +71,17 @@
       $(".btnusers").click(function(){
         if($(this).text() == "Add"){
           $(this).text("Remove");
-          alert($(this).prev(".email").text());
+          command = "Add";
+          receivedFriend = $(this).prev(".email").text();
+          alert(receivedFriend);
         }
         else {
           $(this).text("Add");
-          alert($(this).prev(".email").text());
+          command = "Remove";
+          receivedFriend = $(this).prev(".email").text();
+          alert(receivedFriend);
         }
-        $.get('/getAddRemove', controllers.addRemove.addRemove);
+        $.get('/addRemoveController');
       })
     })
     </script>
